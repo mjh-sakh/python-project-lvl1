@@ -1,3 +1,5 @@
+#!/usr/bin/env pythonmak
+
 def main():
     print('Welcome to the Brain Games!')
 
