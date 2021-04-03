@@ -14,5 +14,8 @@ jobs:
       - name: install poetry
         run: pip install poetry
         
+      - name: set up poetry
+        run: make install
+        
       - name: Run flake8 with WPS
         run: make lint
