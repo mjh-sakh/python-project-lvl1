@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """Empty docstring."""
 
 import prompt

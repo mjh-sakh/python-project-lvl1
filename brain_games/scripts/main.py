@@ -5,6 +5,7 @@ from brain_games import cli
 
 
 def main():
+    """Game run."""
     cli.welcome_user()
 
 
