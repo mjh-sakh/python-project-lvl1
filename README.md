@@ -8,4 +8,4 @@
 [![Brain-game Even](https://img.youtube.com/vi/qLqRxsKreIM/0.jpg)](https://www.youtube.com/watch?v=qLqRxsKreIM "Brain-game Even")
 
 # Game "Calc"
-[![Brain-game Calc](https://img.youtube.com/vi/FvTfsmKF3uI/0.jpg)](https://www.youtube.com/watch?v=FvTfsmKF3uI "Brain-game Calc")
+[![Brain-game Calc](https://img.youtube.com/vi/jHxgKc3Tu8U/0.jpg)](https://www.youtube.com/watch?v=jHxgKc3Tu8U "Brain-game Calc")
