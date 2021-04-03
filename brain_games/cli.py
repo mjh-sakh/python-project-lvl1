@@ -38,5 +38,5 @@ def play_game_even_check(name):
             print(f"Let's try again, {name}!")  # noqa: WPS421, WPS305
             break
         if counter_correct_answers == 3:
-            print(f'Congratulations, {name}')  # noqa: WPS421, WPS305
+            print(f'Congratulations, {name}!')  # noqa: WPS421, WPS305
             break
