@@ -31,7 +31,8 @@ def play_game_gcd():
         numbers: str
         correct_answer: str
     """
-    number1 = random.randint(1, 100)  # noqa: S311
-    number2 = random.randint(1, 100)  # noqa: S311
+    initial_gcd = random.randint(2, 9)  # noqa: S311
+    number1 = random.randint(2, 5) * initial_gcd  # noqa: S311
+    number2 = random.randint(4, 9) * initial_gcd  # noqa: S311
     correct_answer = str(find_gcd(number1, number2))
     return f'{number1} {number2}', correct_answer  # noqa: WPS305
