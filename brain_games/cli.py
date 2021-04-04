@@ -38,9 +38,8 @@ class Game(object):
         """Print rule for game."""
         print(self.rule)  # noqa: WPS421
 
-    def run(self):
-        """Start game."""
-        self.print_rule()
+    def play(self):
+        """Start game play."""
         counter_correct_answers = 0
         while True:
             task, correct_answer = self.game_engine()
@@ -56,3 +55,8 @@ class Game(object):
             if counter_correct_answers == self.win_count:
                 print(f'Congratulations, {self.name}!')  # noqa: WPS421, WPS305
                 break
+
+    def run(self):
+        """Run game."""
+        self.print_rule()
+        self.play()
