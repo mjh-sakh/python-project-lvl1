@@ -25,7 +25,7 @@ def find_gcd(number1: int, number2: int) -> int:
 
 def play_game_gcd():
     """
-    Generate task and answer for even number game is even or not.
+    Generate task and answer for gcd game.
 
     Returns:
         numbers: str
