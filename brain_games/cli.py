@@ -40,6 +40,7 @@ class Game(object):
 
     def run(self):
         """Start game."""
+        self.print_rule()
         counter_correct_answers = 0
         while True:
             task, correct_answer = self.game_engine()
