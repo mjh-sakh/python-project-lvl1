@@ -6,7 +6,7 @@ from brain_games import cli
 
 def main():
     """Game run."""
-    cli.welcome_user()
+    cli.just_say_hello()
 
 
 if __name__ == '__main__':
