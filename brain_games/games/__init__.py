@@ -1,1 +1,1 @@
-"""Empty docstring."""
+# noqa: D104
