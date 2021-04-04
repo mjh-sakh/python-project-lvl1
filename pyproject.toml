@@ -1,11 +1,20 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.0"
-description = ""
+version = "1.0"
+description = "Hexlet Python Dev Project 1 Games."
 authors = ["MjH.Sakh <48555070+mjh-sakh@users.noreply.github.com>"]
 packages = [
   { include = "brain_games" },
 ]
+classifiers = [
+    "Development Status :: 7 - Inactive",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Education"
+]
+repository = "https://github.com/mjh-sakh/python-project-lvl1"
 
 [tool.poetry.dependencies]
 python = "^3.6"
