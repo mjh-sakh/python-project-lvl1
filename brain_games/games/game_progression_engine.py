@@ -4,7 +4,7 @@ import random
 RULES = 'What number is missing in the progression?'
 
 
-def logic():
+def task_answer_generator():
     """
     Generate task and answer for progression game.
 

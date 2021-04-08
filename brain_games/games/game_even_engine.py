@@ -5,7 +5,7 @@ import random
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def logic():
+def task_answer_generator():
     """
     Generate task and answer for even number game is even or not.
 

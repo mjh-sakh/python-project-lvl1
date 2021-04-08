@@ -8,6 +8,7 @@ REQUIRED_WIN_COUNT = 3
 def run_game(game_engine):
     """
     Rung game using provided engine.
+
     First, welcome user, print rules, start game engine.
 
     Args:
@@ -16,20 +17,20 @@ def run_game(game_engine):
     name = ask_player_name()
     welcome_player(name)
     print(game_engine.RULES)  # noqa: WPS421
-    run_game_logic_for_player(game_engine.logic, name)
+    generate_tasks_for_player(game_engine.task_answer_generator, name)
 
 
-def run_game_logic_for_player(game_logic, name):
+def generate_tasks_for_player(task_answer_generator, name):
     """
     Start game play.
 
     Args:
-        game_logic: function that returns str, str
+        task_answer_generator: function that returns str, str
         name: players name
     """
     counter_correct_answers = 0
     while counter_correct_answers < REQUIRED_WIN_COUNT:
-        task, correct_answer = game_logic()
+        task, correct_answer = task_answer_generator()
         print(f'Question: {task}')  # noqa: WPS421, WPS305
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:
