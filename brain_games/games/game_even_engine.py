@@ -5,7 +5,7 @@ import random
 GAME_EVEN_RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def play_game_even():
+def game_even_engine():
     """
     Generate task and answer for even number game is even or not.
 
@@ -13,6 +13,6 @@ def play_game_even():
         number: number to be guessed.
         correct_answer: 'yes' for even, 'no' for odd.
     """
-    number = random.randint(1, 100)  # noqa: S311
-    correct_answer = 'yes' if number % 2 == 0 else 'no'
-    return number, correct_answer
+    number_for_question = random.randint(1, 100)  # noqa: S311
+    correct_answer = 'yes' if number_for_question % 2 == 0 else 'no'
+    return number_for_question, correct_answer

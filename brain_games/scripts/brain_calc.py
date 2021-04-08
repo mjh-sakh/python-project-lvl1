@@ -8,7 +8,7 @@ from brain_games.games import game_calc_engine
 def main():
     """Run calc game."""
     initiate_game(
-        game_calc_engine.play_game_calc,
+        game_calc_engine.game_calc_engine,
         game_calc_engine.GAME_CALC_RULE,
     )
 

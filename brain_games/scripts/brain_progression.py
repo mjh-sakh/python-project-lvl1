@@ -8,7 +8,7 @@ from brain_games.games import game_progression_engine
 def main():
     """Run progression game."""
     initiate_game(
-        game_progression_engine.play_game_progression,
+        game_progression_engine.game_progression_engine,
         game_progression_engine.GAME_PROGRESSION_RULE,
     )
 

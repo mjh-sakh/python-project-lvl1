@@ -8,7 +8,7 @@ from brain_games.games import game_prime_engine
 def main():
     """Run prime game."""
     initiate_game(
-        game_prime_engine.play_game_prime,
+        game_prime_engine.game_prime_engine,
         game_prime_engine.GAME_PRIME_RULE,
     )
 

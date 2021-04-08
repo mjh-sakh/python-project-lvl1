@@ -4,7 +4,7 @@ import random
 GAME_PROGRESSION_RULE = 'What number is missing in the progression?'
 
 
-def play_game_progression():
+def game_progression_engine():
     """
     Generate task and answer for progression game.
 

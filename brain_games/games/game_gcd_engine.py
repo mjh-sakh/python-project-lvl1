@@ -23,7 +23,7 @@ def find_gcd(number1: int, number2: int) -> int:
     return find_gcd(number2, number1 % number2)
 
 
-def play_game_gcd():
+def game_gcd_engine():
     """
     Generate task and answer for gcd game.
 

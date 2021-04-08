@@ -27,7 +27,7 @@ def is_prime(number: int) -> bool:
     return True
 
 
-def play_game_prime():
+def game_prime_engine():
     """
     Generate task and answer for prime game.
 

@@ -8,7 +8,7 @@ from brain_games.games import game_gcd_engine
 def main():
     """Run gcd game."""
     initiate_game(
-        game_gcd_engine.play_game_gcd,
+        game_gcd_engine.game_gcd_engine,
         game_gcd_engine.GAME_GCD_RULE,
     )
 
