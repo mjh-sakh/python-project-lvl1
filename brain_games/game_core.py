@@ -1,6 +1,6 @@
 # noqa: D100
 
-from brain_games.cli import get_input_from_player
+from brain_games.cli import get_input_from_player, show_message
 
 REQUIRED_WIN_COUNT = 3
 
@@ -42,18 +42,6 @@ def generate_tasks_for_player(task_answer_generator, name):
             break
     else:
         show_message(f'Congratulations, {name}!')  # noqa: WPS305
-
-
-def show_message(message):
-    """
-    Display given message to users.
-
-    Currently it uses print to cli.
-
-    Args:
-        message: str
-    """
-    print(message)  # noqa: WPS421
 
 
 def just_say_hello():
