@@ -1,5 +1,5 @@
 # noqa: D100
-from brain_games.cli import ask_answer_from_player, ask_player_name
+from brain_games.cli import get_input_from_player
 
 REQUIRED_WIN_COUNT = 3
 
@@ -13,8 +13,8 @@ def run_game(game_engine):
     Args:
         game_engine: package
     """
-    name = ask_player_name()
-    show_message(f'{name}! Welcome to the Brain Games!')
+    name = get_input_from_player('May I have your name?\n')
+    show_message(f'{name}! Welcome to the Brain Games!')  # noqa: WPS305
     show_message(game_engine.RULES)
     generate_tasks_for_player(game_engine.task_answer_generator, name)
 
@@ -31,7 +31,7 @@ def generate_tasks_for_player(task_answer_generator, name):
     while counter_correct_answers < REQUIRED_WIN_COUNT:
         task, correct_answer = task_answer_generator()
         show_message(f'Question: {task}')  # noqa: WPS305
-        answer = ask_answer_from_player()
+        answer = get_input_from_player('Your answer: ')
         if answer == correct_answer:
             counter_correct_answers += 1
             show_message('Correct!')

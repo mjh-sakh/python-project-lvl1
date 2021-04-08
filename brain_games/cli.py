@@ -9,21 +9,16 @@ def just_say_hello():
     print(f'Hello, {name}!')  # noqa: WPS421, WPS305
 
 
-def ask_player_name():
+def get_input_from_player(text):
     """
-    Ask player's name.
+    Ask input from player.
+
+    Show provided text.
+
+    Args:
+        text: str.
 
     Returns:
-        name: Name of player.
+        input: str.
     """
-    return prompt.string('May I have your name?\n')
-
-
-def ask_answer_from_player():
-    """
-    Ask player's answer.
-
-    Returns:
-        answer: str.
-    """
-    return prompt.string('Your answer: ')
+    return prompt.string(text)
