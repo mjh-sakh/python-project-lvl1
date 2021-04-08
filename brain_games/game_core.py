@@ -1,4 +1,5 @@
 # noqa: D100
+
 from brain_games.cli import get_input_from_player
 
 REQUIRED_WIN_COUNT = 3
@@ -53,3 +54,9 @@ def show_message(message):
         message: str
     """
     print(message)  # noqa: WPS421
+
+
+def just_say_hello():
+    """Ask name and say hello."""
+    name = get_input_from_player('May I have your name? ')
+    show_message(f'Hello, {name}!')  # noqa: WPS305
