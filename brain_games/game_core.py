@@ -13,9 +13,10 @@ def initiate_game(game_engine, rules):
         game_engine: func
         rules: str
     """
-    name = welcome_user()
-    print(rules)  # noqa: WPS421
-    run_game_engine(game_engine, name)
+    name = ask_player_name()
+    welcome_player(name)
+    print(game_engine.RULES)  # noqa: WPS421
+    run_game_engine(game_engine.logic, name)
 
 
 def run_game_engine(game_engine, name):

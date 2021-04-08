@@ -9,7 +9,7 @@ def just_say_hello():
     print(f'Hello, {name}!')  # noqa: WPS421, WPS305
 
 
-def welcome_user():
+def ask_player_name():
     """
     Ask player's name and greed.
 
@@ -19,5 +19,14 @@ def welcome_user():
     :return Name of player.
     """
     name = prompt.string('May I have your name?\n')
-    print(f'{name}! Welcome to the Brain Games!')  # noqa: WPS421, WPS305
     return name
+
+
+def welcome_player(name):
+    """
+    Welcome player by name.
+
+    Args:
+        name: str
+    """
+    print(f'{name}! Welcome to the Brain Games!')  # noqa: WPS421, WPS305
