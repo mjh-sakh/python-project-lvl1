@@ -15,11 +15,8 @@ def ask_player_name():
 
     Returns:
         name: Name of player.
-
-    :return Name of player.
     """
-    name = prompt.string('May I have your name?\n')
-    return name
+    return prompt.string('May I have your name?\n')
 
 
 def welcome_player(name):
