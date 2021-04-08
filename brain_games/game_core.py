@@ -1,7 +1,21 @@
 # noqa: D100
 import prompt
+from brain_games.cli import welcome_user
 
 REQUIRED_WIN_COUNT = 3
+
+
+def initiate_game(game_engine, rules):
+    """
+    Initiate game. Welcome user, print rules, start game engine.
+
+    Args:
+        game_engine: func
+        rules: str
+    """
+    name = welcome_user()
+    print(rules)  # noqa: WPS421
+    run_game_engine(game_engine, name)
 
 
 def run_game_engine(game_engine, name):
