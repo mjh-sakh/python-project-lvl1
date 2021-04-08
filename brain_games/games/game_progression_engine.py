@@ -1,10 +1,10 @@
 # noqa: D100
 import random
 
-GAME_PROGRESSION_RULE = 'What number is missing in the progression?'
+RULES = 'What number is missing in the progression?'
 
 
-def game_progression_engine():
+def logic():
     """
     Generate task and answer for progression game.
 

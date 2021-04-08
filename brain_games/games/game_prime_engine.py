@@ -1,7 +1,7 @@
 # noqa: D100
 import random
 
-GAME_PRIME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'  # noqa: E501
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'  # noqa: E501
 
 
 def is_prime(number: int) -> bool:
@@ -27,7 +27,7 @@ def is_prime(number: int) -> bool:
     return True
 
 
-def game_prime_engine():
+def logic():
     """
     Generate task and answer for prime game.
 

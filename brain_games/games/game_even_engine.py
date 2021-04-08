@@ -2,10 +2,10 @@
 
 import random
 
-GAME_EVEN_RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def game_even_engine():
+def logic():
     """
     Generate task and answer for even number game is even or not.
 

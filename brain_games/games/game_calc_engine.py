@@ -1,10 +1,10 @@
 # noqa: D100
 import random
 
-GAME_CALC_RULE = 'What is the result of the expression?'
+RULES = 'What is the result of the expression?'
 
 
-def game_calc_engine():
+def logic():
     """
     Generate task and answer for cal game.
 

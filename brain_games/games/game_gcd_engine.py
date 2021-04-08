@@ -2,7 +2,7 @@
 
 import random
 
-GAME_GCD_RULE = 'Find the greatest common divisor of given numbers.'
+RULES = 'Find the greatest common divisor of given numbers.'
 
 
 def find_gcd(number1: int, number2: int) -> int:
@@ -23,7 +23,7 @@ def find_gcd(number1: int, number2: int) -> int:
     return find_gcd(number2, number1 % number2)
 
 
-def game_gcd_engine():
+def logic():
     """
     Generate task and answer for gcd game.
 

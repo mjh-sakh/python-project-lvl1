@@ -1,17 +1,16 @@
 # noqa: D100
 import prompt
-from brain_games.cli import welcome_user
+from brain_games.cli import ask_player_name, welcome_player
 
 REQUIRED_WIN_COUNT = 3
 
 
-def initiate_game(game_engine, rules):
+def run_game(game_engine):
     """
     Initiate game. Welcome user, print rules, start game engine.
 
     Args:
-        game_engine: func
-        rules: str
+        game_engine: package
     """
     name = ask_player_name()
     welcome_player(name)
