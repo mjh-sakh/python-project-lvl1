@@ -1,4 +1,4 @@
-# noqa: D100
+"""Functions that request data input from player."""
 
 import prompt
 
@@ -11,7 +11,7 @@ def just_say_hello():
 
 def ask_player_name():
     """
-    Ask player's name and greed.
+    Ask player's name.
 
     Returns:
         name: Name of player.
@@ -19,11 +19,11 @@ def ask_player_name():
     return prompt.string('May I have your name?\n')
 
 
-def welcome_player(name):
+def ask_answer_from_player():
     """
-    Welcome player by name.
+    Ask player's answer.
 
-    Args:
-        name: str
+    Returns:
+        answer: str.
     """
-    print(f'{name}! Welcome to the Brain Games!')  # noqa: WPS421, WPS305
+    return prompt.string('Your answer: ')

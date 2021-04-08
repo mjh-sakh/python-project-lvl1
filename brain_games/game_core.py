@@ -1,6 +1,5 @@
 # noqa: D100
-import prompt
-from brain_games.cli import ask_player_name, welcome_player
+from brain_games.cli import ask_answer_from_player, ask_player_name
 
 REQUIRED_WIN_COUNT = 3
 
@@ -32,7 +31,7 @@ def generate_tasks_for_player(task_answer_generator, name):
     while counter_correct_answers < REQUIRED_WIN_COUNT:
         task, correct_answer = task_answer_generator()
         print(f'Question: {task}')  # noqa: WPS421, WPS305
-        answer = prompt.string('Your answer: ')
+        answer = ask_answer_from_player()
         if answer == correct_answer:
             counter_correct_answers += 1
             print('Correct!')  # noqa: WPS421
@@ -42,3 +41,13 @@ def generate_tasks_for_player(task_answer_generator, name):
             break
     else:
         print(f'Congratulations, {name}!')  # noqa: WPS421, WPS305
+
+
+def welcome_player(name):
+    """
+    Welcome player by name.
+
+    Args:
+        name: str
+    """
+    print(f'{name}! Welcome to the Brain Games!')  # noqa: WPS421, WPS305
