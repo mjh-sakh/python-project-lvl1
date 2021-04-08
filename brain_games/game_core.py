@@ -7,7 +7,8 @@ REQUIRED_WIN_COUNT = 3
 
 def run_game(game_engine):
     """
-    Initiate game. Welcome user, print rules, start game engine.
+    Rung game using provided engine.
+    First, welcome user, print rules, start game engine.
 
     Args:
         game_engine: package
