@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Initiate and run Even game."""
 
-from brain_games.game_core import run_game
+from brain_games.game_engine import run_game
 from brain_games.games import progression
 
 
