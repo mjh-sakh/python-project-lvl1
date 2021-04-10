@@ -4,7 +4,7 @@ import random
 RULES = 'What is the result of the expression?'
 
 
-def task_answer_generator():
+def generate_task_answer():
     """
     Generate task and answer for cal game.
 

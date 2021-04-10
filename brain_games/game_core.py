@@ -19,7 +19,7 @@ def run_game(game_engine):
     show_message(game_engine.RULES)
     counter_correct_answers = 0
     while counter_correct_answers < REQUIRED_WIN_COUNT:
-        task, correct_answer = game_engine.task_answer_generator()
+        task, correct_answer = game_engine.generate_task_answer()
         show_message(f'Question: {task}')  # noqa: WPS305
         answer = get_input_from_player('Your answer: ')
         if answer == correct_answer:

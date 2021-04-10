@@ -20,7 +20,7 @@ def populate_series(series, initial_value: int, increment: int, length: int = 10
         series.append(series[-1] + increment)
 
 
-def task_answer_generator():  # noqa: WPS210
+def generate_task_answer():  # noqa: WPS210
     """
     Generate task and answer for progression game.
 
