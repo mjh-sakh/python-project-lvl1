@@ -19,8 +19,8 @@ def generate_task_answer():  # noqa: WPS210
     initial_value = random.randint(40, 70)  # noqa: S311, WPS432
     series_length = random.randint(6, 10)  # noqa: S311, WPS432
     series = list(map(lambda x: initial_value + x * increment, range(series_length - 1)))  # noqa: WPS221, WPS111, E501
-    ix = random.randint(0, len(series) - 1)  # noqa: S311
-    lookup_element = series[ix]
-    series[ix] = '..'
+    lookup_element_ix = random.randint(0, len(series) - 1)  # noqa: S311
+    lookup_element = series[lookup_element_ix]
+    series[lookup_element_ix] = '..'
     progression = ' '.join(map(str, series))
     return progression, str(lookup_element)
