@@ -4,22 +4,6 @@ import random
 RULES = 'What number is missing in the progression?'
 
 
-def populate_series(series, initial_value: int, increment: int, length: int = 10):  # noqa: E501
-    """
-    Populate given series in place with values starting from initial value.
-
-    Args:
-        series: list
-        initial_value: int
-        increment: int
-        length: int
-
-    """
-    series.append(initial_value)
-    for _ in range(length - 1):
-        series.append(series[-1] + increment)
-
-
 def generate_task_answer():  # noqa: WPS210
     """
     Generate task and answer for progression game.
@@ -34,8 +18,7 @@ def generate_task_answer():  # noqa: WPS210
             break
     initial_value = random.randint(40, 70)  # noqa: S311, WPS432
     series_length = random.randint(6, 10)  # noqa: S311, WPS432
-    series = []
-    populate_series(series, initial_value, increment, series_length)
+    series = list(map(lambda x: initial_value + x * increment, range(series_length)))  # noqa: WPS221, WPS111, E501
     ix = random.randint(0, len(series) - 1)  # noqa: S311
     lookup_element = series[ix]
     series[ix] = '..'

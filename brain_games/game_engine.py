@@ -33,7 +33,7 @@ def run_game(game_engine):
         show_message(f'Congratulations, {name}!')  # noqa: WPS305
 
 
-def just_say_hello():
+def say_hello():
     """Ask name and say hello."""
     name = get_input_from_player('May I have your name? ')
     show_message(f'Hello, {name}!')  # noqa: WPS305
