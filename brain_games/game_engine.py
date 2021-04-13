@@ -1,6 +1,6 @@
 # noqa: D100
 
-from brain_games.cli import get_input_from_player, show_message
+from brain_games.user_interface import get_input_from_player, show_message
 
 REQUIRED_WIN_COUNT = 3
 
@@ -31,9 +31,3 @@ def run_game(game_engine):
             break
     else:
         show_message(f'Congratulations, {name}!')
-
-
-def say_hello():
-    """Ask name and say hello."""
-    name = get_input_from_player('May I have your name? ')
-    show_message(f'Hello, {name}!')

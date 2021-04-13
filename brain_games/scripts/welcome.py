@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 """First task for Brain Games."""
 
-from brain_games.game_engine import say_hello
+from brain_games.cli import welcome
 
 
 def main():
     """Game run."""
-    say_hello()
+    welcome()
 
 
 if __name__ == '__main__':
