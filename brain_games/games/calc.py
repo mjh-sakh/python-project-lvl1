@@ -1,7 +1,7 @@
 # noqa: D100
 import random
 
-RULES = 'What is the result of the expression?'
+RULE = 'What is the result of the expression?'
 
 
 def generate_task_answer():
@@ -9,16 +9,17 @@ def generate_task_answer():
     Generate task and answer for cal game.
 
     Returns:
-        equation: to be calculated.
-        correct_answer: correct result.
+        task: equation to be calculated, str.
+        answer: result of equation, str.
     """
     operators = {
         '+': lambda a, b: a + b,  # noqa: WPS111
         '-': lambda a, b: a - b,  # noqa: WPS111
         '*': lambda a, b: a * b,  # noqa: WPS111
     }
-    a = random.randint(20, 50)  # noqa: S311, WPS111, WPS432
-    b = random.randint(1, 20)  # noqa: S311, WPS111, WPS432
+    number1 = random.randint(20, 50)  # noqa: S311, WPS111, WPS432
+    number2 = random.randint(1, 20)  # noqa: S311, WPS111, WPS432
     operator = random.choice(list(operators.keys()))  # noqa: S311
-    equation = ' '.join([str(a), operator, str(b)])
-    return equation, str(operators[operator](a, b))
+    task = str(number1) + ' ' + operator + ' ' + str(number2)
+    answer = str(operators[operator](number1, number2))
+    return task, answer

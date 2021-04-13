@@ -1,7 +1,7 @@
 # noqa: D100
 import random
 
-RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'  # noqa: E501
+RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'  # noqa: E501
 
 
 def is_prime(number: int) -> bool:
@@ -33,7 +33,8 @@ def generate_task_answer():
 
     Returns:
         number: str.
-        correct_answer: str.
+        answer: yes or no, str.
     """
     number = random.randint(11, 99)  # noqa: S311, WPS432
-    return str(number), 'yes' if is_prime(number) else 'no'
+    answer = 'yes' if is_prime(number) else 'no'
+    return str(number), answer

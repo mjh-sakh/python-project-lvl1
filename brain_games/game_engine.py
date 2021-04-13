@@ -16,7 +16,7 @@ def run_game(game_engine):
     """
     name = get_input_from_player('May I have your name?\n')
     show_message(f'{name}! Welcome to the Brain Games!')  # noqa: WPS305
-    show_message(game_engine.RULES)
+    show_message(game_engine.RULE)
     counter_correct_answers = 0
     while counter_correct_answers < REQUIRED_WIN_COUNT:
         task, correct_answer = game_engine.generate_task_answer()
