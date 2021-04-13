@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 """Initiate and run Even game."""
 
-from brain_games.game_engine import run_game
+from brain_games.game_engine import run
 from brain_games.games import gcd
 
 
 def main():
     """Run gcd game."""
-    run_game(gcd)
+    run(gcd)
 
 
 if __name__ == '__main__':
