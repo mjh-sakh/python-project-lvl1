@@ -13,6 +13,6 @@ def generate_task_answer():
         task: number to be guessed, str.
         answer: 'yes' for even, 'no' for odd, str.
     """
-    task = random.randint(1, 100)  # noqa: S311
+    task = random.randint(1, 100)
     answer = 'yes' if task % 2 == 0 else 'no'
     return str(task), answer

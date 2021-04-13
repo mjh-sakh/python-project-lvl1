@@ -31,9 +31,9 @@ def generate_task_answer():
         task: two numbers, str.
         answer: str
     """
-    initial_gcd = random.randint(2, 9)  # noqa: S311
-    number1 = random.randint(2, 5) * initial_gcd  # noqa: S311
-    number2 = random.randint(4, 9) * initial_gcd  # noqa: S311
+    initial_gcd = random.randint(2, 9)
+    number1 = random.randint(2, 5) * initial_gcd
+    number2 = random.randint(4, 9) * initial_gcd
     task = f'{number1} {number2}'
     answer = str(find_gcd(number1, number2))
     return task, answer

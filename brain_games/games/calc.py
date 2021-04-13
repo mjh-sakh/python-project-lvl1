@@ -17,9 +17,9 @@ def generate_task_answer():  # noqa: WPS210
         '-': lambda a, b: a - b,  # noqa: WPS111
         '*': lambda a, b: a * b,  # noqa: WPS111
     }
-    number1 = random.randint(20, 50)  # noqa: S311, WPS111, WPS432
-    number2 = random.randint(1, 20)  # noqa: S311, WPS111, WPS432
-    operator = random.choice(list(operators.keys()))  # noqa: S311
+    number1 = random.randint(20, 50)  # noqa: WPS432
+    number2 = random.randint(1, 20)  # noqa: WPS432
+    operator = random.choice(list(operators.keys()))
     task = f'{number1} {operator} {number2}'
     answer = str(operators[operator](number1, number2))
     return task, answer

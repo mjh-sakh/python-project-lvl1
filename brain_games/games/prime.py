@@ -35,6 +35,6 @@ def generate_task_answer():
         number: str.
         answer: yes or no, str.
     """
-    number = random.randint(11, 99)  # noqa: S311, WPS432
+    number = random.randint(11, 99)  # noqa: WPS432
     answer = 'yes' if is_prime(number) else 'no'
     return str(number), answer
