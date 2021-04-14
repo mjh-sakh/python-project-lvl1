@@ -16,7 +16,7 @@ def generate_progression(initial_value, increment, progression_length):
     Returns:
          progression: list
     """
-    return list(map(lambda x: initial_value + x * increment, range(progression_length)))  # noqa: WPS221, WPS111, E501
+    return [initial_value + x * increment for x in range(progression_length)]  # noqa: WPS111, E501
 
 
 def generate_task_answer():  # noqa: WPS210
